@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <h1>GrefelNable</h1>
+      <h1 className="text-emerald-500">GrefelNable</h1>
     </div>
   );
 }
