@@ -1,7 +1,14 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div>
-      <h1 className="text-emerald-500">GrefelNable</h1>
+      <Navbar />
+      {/* hero */}
+      {/* about */}
+      {/* projects */}
+      {/* contact */}
+      {/* footer */}
     </div>
   );
 }
