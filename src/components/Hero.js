@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="mb-20 flex gap-4">
             <a
               href="mailto: felnable@gmail.com"
-              class="bg-violet-500 text-white px-5 py-3 rounded-xl tracking-wide shadow-md border-2 border-violet-500 ease-in-out duration-300 hover:shadow-2xl hover:bg-transparent hover:text-slate-900 "
+              className="bg-violet-500 text-white px-5 py-3 rounded-xl tracking-wide shadow-md border-2 border-violet-500 ease-in-out duration-300 hover:shadow-2xl hover:bg-transparent hover:text-slate-900 "
             >
               Let's talk
               <FaPaperPlane className="inline ml-4" />
