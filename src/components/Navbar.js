@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/grefel-logo-white.png";
+import logo from "../assets/grefel-logo-1.png";
 
 const Navbar = () => {
   // Toggle dropdown menu when user clicks.
@@ -11,30 +11,38 @@ const Navbar = () => {
           <img src={logo} alt="grefel's dark logo" className="w-[120px]" />
         </div>
         <div>
-          <ul className="hidden md:flex menu menu-horizontal p-0 ">
+          <ul className="hidden md:flex gap-8 tracking-widest menu-horizontal p-0 ">
             <li>
-              <a href="#">Home</a>
+              <a href="#" className="btn-custom">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" className="btn-custom">
+                About
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" className="btn-custom">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" className="btn-custom">
+                Contact
+              </a>
             </li>
           </ul>
           {/* dropdown menu for small screen */}
           <div className="dropdown dropdown-end md:hidden">
             <label
               tabIndex={0}
-              className="btn m-1"
+              className="btn btn-outline btn-accent m-1"
               onClick={() => setIsOpen(true)}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -51,7 +59,7 @@ const Navbar = () => {
               tabIndex={0}
               className={`${
                 isOpen ? "" : "hidden"
-              } dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52`}
+              } dropdown-content menu p-2 shadow-2xl bg-base-100 rounded-box w-52 tracking-widest`}
             >
               <li onClick={() => setIsOpen(false)}>
                 <a href="#">Home</a>

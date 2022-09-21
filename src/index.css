@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* button css with underline animation */
+.btn-custom {
+  position: relative;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.btn-custom:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  @apply bg-amber-500;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.btn-custom:hover {
+  @apply text-amber-500;
+}
+.btn-custom:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
