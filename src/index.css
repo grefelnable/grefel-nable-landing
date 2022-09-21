@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typography */
+body {
+  font-family: "Poppins", sans-serif;
+  @apply text-stone-900;
+  @apply bg-white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* layout container for the whole page */
+.section-center {
+  @apply w-11/12;
+  @apply mx-auto;
+  @apply max-w-6xl;
+}
+
 /* button css with underline animation */
 .btn-custom {
   position: relative;

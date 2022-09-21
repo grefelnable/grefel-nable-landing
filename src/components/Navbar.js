@@ -6,14 +6,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="navbar bg-base-100">
-      <div className="w-11/12 mx-auto max-w-6xl flex justify-between">
+      <div className="section-center flex justify-between">
         <div>
           <img src={logo} alt="grefel's dark logo" className="w-[120px]" />
         </div>
         <div>
           <ul className="hidden md:flex gap-8 tracking-widest menu-horizontal p-0 ">
             <li>
-              <a href="#" className="btn-custom">
+              <a href="/" className="btn-custom">
                 Home
               </a>
             </li>
@@ -62,7 +62,7 @@ const Navbar = () => {
               } dropdown-content menu p-2 shadow-2xl bg-base-100 rounded-box w-52 tracking-widest`}
             >
               <li onClick={() => setIsOpen(false)}>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li onClick={() => setIsOpen(false)}>
                 <a href="#about">About</a>
