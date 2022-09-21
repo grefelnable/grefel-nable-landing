@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCss3, FaHtml5, FaReact, FaSass } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
 import { BsArrowUpRight } from "react-icons/bs";
 import GrefelFace from "../assets/grefel-nable.jpg";
 
@@ -10,7 +10,7 @@ const About = () => {
       <div className="section-center lg:flex justify-between">
         <article className="mb-4 lg:max-w-xl">
           <h2 className="mb-4">About Me</h2>
-          {/* <!-- about text --> */}
+          {/* about text  */}
           <p className="mb-4">
             Hi my full name is Grefel Expedito Leo Nable and I'm a frontend
             developer. I have no real world experience but I'm constantly
@@ -25,7 +25,7 @@ const About = () => {
             take job which I'm confident that I will give value to the company.
           </p>
           <h3 className="mb-4">Skills</h3>
-          {/* <!-- col 1 --> */}
+          {/*  col 1  */}
           <div className="flex justify-between mb-4">
             <div>
               <p className="text-[3rem] text-violet-900">
@@ -46,8 +46,8 @@ const About = () => {
               <p>Javascript</p>
             </div>
           </div>
-          {/* <!-- col 2 --> */}
-          <div className="flex justify-between">
+          {/*  col 2 */}
+          <div className="flex justify-between mb-4">
             <div>
               <p className="text-[3rem] text-violet-900">
                 <FaReact />
@@ -65,6 +65,15 @@ const About = () => {
                 <SiTailwindcss />
               </p>
               <p>TailwindCSS</p>
+            </div>
+          </div>
+          {/* col 3 */}
+          <div className="flex justify-between">
+            <div>
+              <p className="text-[3rem] text-violet-900">
+                <SiFirebase />
+              </p>
+              <p>Firebase</p>
             </div>
           </div>
         </article>
