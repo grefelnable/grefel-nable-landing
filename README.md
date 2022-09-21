@@ -11,3 +11,4 @@
 - React.js
 - TailwindCSS
 - DaisyUI plugin for TailwindCSS
+- React Icons
