@@ -11,12 +11,10 @@ import {
 import GrefelHoodie from "../assets/grefel-hoodie-remove-bg.png";
 
 const Hero = () => {
-  let learnText = "Learn about me";
-  const characters = learnText.split("");
   return (
     <header className="hero h-screen bg-base-200">
       <div className="section-center flex flex-col justify-between lg:flex-row-reverse ">
-        <div className="relative">
+        <div className="relative hidden lg:block">
           <img src={GrefelHoodie} className="object-cover mask mask-hexagon" />
         </div>
 
