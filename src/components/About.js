@@ -79,13 +79,14 @@ const About = () => {
         </article>
         <article className="lg:w-[400px] pt-12">
           {/* <!-- grefel image --> */}
-          <div className="hidden lg:block w-[250px] mx-auto mb-16 relative custom-border">
+          <div className="hidden lg:block w-[250px] mx-auto mb-6 relative custom-border">
             <img src={GrefelFace} alt="" className="rounded-xl relative" />
           </div>
           {/* <!-- hire me btn --> */}
           <a
             href="mailto: felnable@gmail.com"
-            className="bg-slate-900 w-36 h-36 rounded-full grid items-center text-center inner-border mx-auto ease-in-out duration-300 hover:scale-110 hover:shadow-lg hover:border-violet-500"
+            className="bg-slate-900 w-36 h-36 rounded-full hidden md:grid items-center text-center inner-border mx-auto ease-in-out duration-300 hover:scale-110 hover:shadow-lg hover:border-violet-500
+            "
           >
             <p className="text-white tracking-wide">
               Hire Me

@@ -12,7 +12,7 @@ import GrefelHoodie from "../assets/grefel-hoodie-remove-bg.png";
 
 const Hero = () => {
   return (
-    <header className="hero h-screen bg-base-200">
+    <header id="home" className="hero h-screen bg-base-200">
       <div className="section-center flex flex-col justify-between lg:flex-row-reverse ">
         <div className="relative hidden lg:block">
           <img src={GrefelHoodie} className="object-cover mask mask-hexagon" />
