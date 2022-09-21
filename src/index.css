@@ -97,3 +97,10 @@ a {
   border-bottom: 500px solid rgb(252, 211, 77);
   border-left: 500px solid transparent;
 }
+
+/* inner border in Hire me btn  */
+.inner-border {
+  border: 8px solid;
+  @apply border-slate-900;
+  box-shadow: inset 0px 0px 0px 1px white;
+}
