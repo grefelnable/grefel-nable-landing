@@ -1,11 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/grefel-logo-1.png";
 
 const Navbar = () => {
   // Toggle dropdown menu when user clicks.
   const [isOpen, setIsOpen] = useState(false);
+  //Sticky navbar on scroll
+  const [stickyClass, setStickyClass] = useState("relative");
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
+    };
+  }, []);
+  //Stick navbar
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      const windowHeight = window.scrollY;
+      windowHeight > 16
+        ? setStickyClass("fixed top-0 left-0 z-50 shadow-xl")
+        : setStickyClass("relative");
+    }
+  };
   return (
-    <nav className="navbar bg-base-100">
+    <nav className={`navbar bg-base-100 h-16 ${stickyClass}`}>
       <div className="section-center flex justify-between">
         <div>
           <img src={logo} alt="grefel's dark logo" className="w-[120px]" />
