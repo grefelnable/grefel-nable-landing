@@ -6,7 +6,7 @@ import GrefelFace from "../assets/grefel-nable.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="h-screen bg-primary pt-12">
+    <section id="about" className="h-fit min-h-screen bg-primary pt-12">
       <div className="section-center lg:flex justify-between">
         <article className="mb-4 lg:max-w-xl">
           <h2 className="mb-4">About Me</h2>
