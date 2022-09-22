@@ -21,7 +21,9 @@ const Projects = () => {
             return (
               <article key={id}>
                 <div className="card w-96 glass">
-                  <figure>{/* <img src= alt="car!" /> */}</figure>
+                  <figure className="h-[4rem]">
+                    <img src={`${img}`} alt="car!" />
+                  </figure>
                   <div className="card-body">
                     <h2 className="card-title">Life hack</h2>
                     <p>How to park your car at your garage?</p>

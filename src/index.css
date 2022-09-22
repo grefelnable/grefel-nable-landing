@@ -47,6 +47,9 @@ a {
   display: inline-block;
 }
 
+img {
+  object-fit: cover;
+}
 /* layout container for the whole page */
 .section-center {
   @apply w-11/12;
