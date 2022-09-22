@@ -17,7 +17,7 @@ const Contact = () => {
             .
           </p>
 
-          <p class="text-center">
+          <p className="text-center">
             You can also reach me on Instagram at{" "}
             <a
               href="https://www.instagram.com/grefelcodes/"
