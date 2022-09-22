@@ -20,7 +20,10 @@ const Projects = () => {
           {projects.map((project) => {
             const { id, name, img, description, preview, code } = project;
             return (
-              <article className="card min-h-16 shadow-xl image-full ease-in-out duration-300 hover:scale-105 hover:shadow-2xl">
+              <article
+                key={id}
+                className="card min-h-16 shadow-xl image-full ease-in-out duration-300 hover:scale-105 hover:shadow-2xl"
+              >
                 <figure>
                   <img src={`${img}`} alt="Shoes" />
                 </figure>
@@ -33,6 +36,7 @@ const Projects = () => {
                     {preview && (
                       <a
                         href={preview}
+                        rel="noreferrer"
                         target="_blank"
                         className="btn btn-secondary"
                       >
@@ -42,6 +46,7 @@ const Projects = () => {
 
                     <a
                       href={code}
+                      rel="noreferrer"
                       target="_blank"
                       className="btn bg-violet-500 border-violet-500 hover:bg-violet-800 hover:border-violet-800 text-white text-2xl"
                     >
