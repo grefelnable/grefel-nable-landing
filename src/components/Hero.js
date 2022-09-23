@@ -20,7 +20,7 @@ const Hero = () => {
 
         <div>
           <h3>I'm</h3>
-          <h1 className="text-[9rem] font-bold">GREFEL</h1>
+          <h1 className="text-[7rem] md:text-[9rem] font-bold">GREFEL</h1>
           <h2 className="mb-8">Frontend Developer</h2>
           <div className="mb-20 flex gap-4">
             <a
