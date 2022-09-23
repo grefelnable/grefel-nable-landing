@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="h-fit min-h-screen pt-12 bg-base-100 pb-12"
+      className="h-fit min-h-screen bg-base-200 pt-12 pb-12"
     >
       <div className="section-center">
         <h2 className="text-primary mb-6">Projects</h2>
