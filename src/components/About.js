@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCss3, FaHtml5, FaReact, FaSass } from "react-icons/fa";
+import { FaCss3, FaGit, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
 import { BsArrowUpRight } from "react-icons/bs";
 import GrefelFace from "../assets/grefel-nable.jpg";
@@ -68,12 +68,18 @@ const About = () => {
             </div>
           </div>
           {/* col 3 */}
-          <div className="flex justify-between">
+          <div className="flex gap-[10em]">
             <div>
               <p className="text-[3rem] text-violet-900">
                 <SiFirebase />
               </p>
               <p>Firebase</p>
+            </div>
+            <div>
+              <p className="text-[3rem] text-violet-900">
+                <FaGit />
+              </p>
+              <p>Git Version Control</p>
             </div>
           </div>
         </article>
