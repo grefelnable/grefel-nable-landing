@@ -10,6 +10,15 @@ export const projectsFile = [
   },
   {
     id: 2,
+    name: "country information",
+    img: "./project-snapshots/country-snapshot.png",
+    description:
+      "Search country by name and it will show information such as capital,  population, flag, continent and languages spoken. Additionally it will    show the current weather information of the capital city. Responsive      design which means you can access it on mobile all the way thru a         desktop or laptop.",
+    preview: "https://country-information-c3d21.web.app/",
+    code: "https://github.com/grefelnable/country-information",
+  },
+  {
+    id: 3,
     name: "workout log",
     img: "./project-snapshots/workout-snapshot.png",
     description:
